@@ -17,14 +17,21 @@ struct ContentView: View {
                 Text (recipe.demo().title)
                 Spacer()
                 VStack {
-                    Text (recipe.ingredients[0].title)
                     HStack {
+                        Spacer()
+                        Text (recipe.ingredients[0].title)
+                    }
+                    HStack {
+                        Spacer()
                         recipe.ingredients[0].quantity.map
                             { Text (String($0)) }
                         recipe.ingredients[0].measurement.map
                             { Text ($0.title) }
                     }
-                    Text (recipe.demo().text ?? "no text")
+                    HStack {
+                        Spacer()
+                        Text (recipe.demo().text ?? "no text")
+                    }
                 }
             }
         }
