@@ -65,9 +65,7 @@
 				44A8C82F243B55B30000604B /* AppDelegate.swift */,
 				44A8C831243B55B30000604B /* SceneDelegate.swift */,
 				44A8C833243B55B30000604B /* ContentView.swift */,
-				44B94836243B5C1200770025 /* Ingredient.swift */,
-				44B9483A243B5DEF00770025 /* Recipe.swift */,
-				44B94838243B5D4600770025 /* Measurement.swift */,
+				44B9483C243B5E6C00770025 /* Models */,
 				44A8C835243B55B90000604B /* Assets.xcassets */,
 				44A8C83A243B55B90000604B /* LaunchScreen.storyboard */,
 				44A8C83D243B55B90000604B /* Info.plist */,
@@ -82,6 +80,16 @@
 				44A8C838243B55B90000604B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44B9483C243B5E6C00770025 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44B94836243B5C1200770025 /* Ingredient.swift */,
+				44B9483A243B5DEF00770025 /* Recipe.swift */,
+				44B94838243B5D4600770025 /* Measurement.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
