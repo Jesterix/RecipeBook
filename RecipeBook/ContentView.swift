@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    var recipe = Recipe(title: "water").demo()
+
     var body: some View {
-        Text("Hello, World!")
+        List {
+            HStack {
+                Text (recipe.demo().title)
+                Spacer()
+                VStack {
+                    Text (recipe.ingredients[0].title)
+                    HStack {
+                        recipe.ingredients[0].quantity.map
+                            { Text (String($0)) }
+                        recipe.ingredients[0].measurement.map
+                            { Text ($0.title) }
+                    }
+                    Text (recipe.demo().text ?? "no text")
+                }
+            }
+        }
     }
 }
 
