@@ -123,6 +123,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		44899E5B24409D91001C8192 /* DownloadedRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				44899E5324409C01001C8192 /* DownloadedRecipesViewModel.swift */,
+				44899E5524409C52001C8192 /* DownloadedRecipeRow.swift */,
+				44899E5924409CE3001C8192 /* DownloadedRecipeListView.swift */,
+			);
+			path = DownloadedRecipes;
+			sourceTree = "<group>";
+		};
 		44A8C823243B55B30000604B = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +157,7 @@
 				44A8C831243B55B30000604B /* SceneDelegate.swift */,
 				44A8C833243B55B30000604B /* ContentView.swift */,
 				44899E302440850B001C8192 /* RecipeListView.swift */,
-				44899E5324409C01001C8192 /* DownloadedRecipesViewModel.swift */,
-				44899E5524409C52001C8192 /* DownloadedRecipeRow.swift */,
-				44899E5924409CE3001C8192 /* DownloadedRecipeListView.swift */,
+				44899E5B24409D91001C8192 /* DownloadedRecipes */,
 				44899E5724409CA9001C8192 /* Exts.swift */,
 				44B9483C243B5E6C00770025 /* Models */,
 				44A8C835243B55B90000604B /* Assets.xcassets */,
