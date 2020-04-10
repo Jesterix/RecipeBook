@@ -31,13 +31,13 @@ final class KeyboardGuardian: ObservableObject {
     }
 
     func addObserver() {
-NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyBoardDidHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
-}
+    }
 
-func removeObserver() {
- NotificationCenter.default.removeObserver(self)
-}
+    func removeObserver() {
+        NotificationCenter.default.removeObserver(self)
+    }
 
     deinit {
         NotificationCenter.default.removeObserver(self)
