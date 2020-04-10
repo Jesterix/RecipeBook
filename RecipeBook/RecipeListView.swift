@@ -43,11 +43,14 @@ struct RecipeListView: View {
             Spacer()
 
             TextField("Enter title for recipe...", text: $titleForRecipe, onEditingChanged: { (changed) in
-                print("Username onEditingChanged - \(changed)")
+                print("Title onEditingChanged - \(changed)")
+                if !changed && self.titleForRecipe != "" {
+                    self.recipeListViewModel.appendRecipe(
+                        with: self.titleForRecipe)
+                    self.titleForRecipe = ""
+                }
             }) {
-                print("Username onCommit")
-                self.recipeListViewModel.appendRecipe(
-                    with: self.titleForRecipe)
+                print("Title onCommit")
             }
             .padding()
             .textFieldStyle(RoundedBorderTextFieldStyle())
