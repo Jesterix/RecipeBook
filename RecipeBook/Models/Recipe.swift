@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Recipe {
+struct Recipe: Identifiable {
+    let id = UUID()
     var title: String
     var ingredients: [Ingredient] = []
     var text: String?
@@ -16,6 +17,6 @@ struct Recipe {
     func demo() -> Recipe {
         let measurement = RBMeasurement(title: "spoon", weightInGramms: 15)
         let ingredient = Ingredient(title: "Water", quantity: 1.5, measurement: measurement)
-        return Recipe(title: "demo", ingredients: [ingredient], text: "Take this water and drink it!")
+        return Recipe(title: title, ingredients: [ingredient], text: "Take this water and drink it!")
     }
 }

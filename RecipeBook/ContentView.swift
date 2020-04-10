@@ -9,28 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    var recipe = Recipe(title: "water").demo()
+
+    @EnvironmentObject var recipeListViewModel: RecipeListViewModel
 
     var body: some View {
         List {
-            HStack {
-                Text (recipe.demo().title)
-                Spacer()
-                VStack {
-                    HStack {
-                        Spacer()
-                        Text (recipe.ingredients[0].title)
-                    }
-                    HStack {
-                        Spacer()
-                        recipe.ingredients[0].quantity.map
-                            { Text (String($0)) }
-                        recipe.ingredients[0].measurement.map
-                            { Text ($0.title) }
-                    }
-                    HStack {
-                        Spacer()
-                        Text (recipe.demo().text ?? "no text")
+            ForEach(recipeListViewModel.recipes) { recipe in
+                HStack {
+                    Text(recipe.title)
+                    Spacer()
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Text (recipe.ingredients[0].title)
+                        }
+                        HStack {
+                            Spacer()
+                            recipe.ingredients[0].quantity.map
+                                { Text (String($0)) }
+                            recipe.ingredients[0].measurement.map
+                                { Text ($0.title) }
+                        }
+                        HStack {
+                            Spacer()
+                            Text (recipe.text ?? "no text")
+                        }
                     }
                 }
             }
