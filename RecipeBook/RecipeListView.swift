@@ -46,6 +46,8 @@ struct RecipeListView: View {
                 print("Username onEditingChanged - \(changed)")
             }) {
                 print("Username onCommit")
+                self.recipeListViewModel.appendRecipe(
+                    with: self.titleForRecipe)
             }
             .padding()
             .textFieldStyle(RoundedBorderTextFieldStyle())

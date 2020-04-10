@@ -13,4 +13,8 @@ final class RecipeListViewModel: ObservableObject {
         [RBRecipe.init(title: "Water").demo(),
         RBRecipe.init(title: "Bread").demo(),
         RBRecipe.init(title: "Soup").demo()]
+
+    func appendRecipe(with title: String) {
+        recipes.append(RBRecipe(title: title).demo())
+    }
 }
