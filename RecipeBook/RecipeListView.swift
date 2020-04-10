@@ -41,7 +41,7 @@ struct RecipeListView: View {
                 }
             }
             Spacer()
-
+//            TODO:bug with kGuard not working after adding new recipe
             TextField("Enter title for recipe...", text: $titleForRecipe, onEditingChanged: { (changed) in
                 print("Title onEditingChanged - \(changed)")
                 if !changed && self.titleForRecipe != "" {
