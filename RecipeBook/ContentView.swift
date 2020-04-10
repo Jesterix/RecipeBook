@@ -9,40 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @EnvironmentObject var recipeListViewModel: RecipeListViewModel
 
     var body: some View {
-        List {
-            ForEach(recipeListViewModel.recipes) { recipe in
-                HStack {
-                    Text(recipe.title)
-                    Spacer()
-                    VStack {
-                        HStack {
-                            Spacer()
-                            Text (recipe.ingredients[0].title)
-                        }
-                        HStack {
-                            Spacer()
-                            recipe.ingredients[0].quantity.map
-                                { Text (String($0)) }
-                            recipe.ingredients[0].measurement.map
-                                { Text ($0.title) }
-                        }
-                        HStack {
-                            Spacer()
-                            Text (recipe.text ?? "no text")
-                        }
-                    }
-                }
+        TabView {
+            RecipeListView()
+                .environmentObject(recipeListViewModel)
+                .tag(0)
+                .tabItem {
+                    Text("Recipes")
+                    Image(systemName: "exclamationmark.circle")
             }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
 }
