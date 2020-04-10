@@ -32,7 +32,7 @@
 		44A8C83C243B55B90000604B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A8C83A243B55B90000604B /* LaunchScreen.storyboard */; };
 		44B94837243B5C1200770025 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94836243B5C1200770025 /* Ingredient.swift */; };
 		44B94839243B5D4600770025 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94838243B5D4600770025 /* Measurement.swift */; };
-		44B9483B243B5DEF00770025 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9483A243B5DEF00770025 /* Recipe.swift */; };
+		44B9483B243B5DEF00770025 /* RBRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9483A243B5DEF00770025 /* RBRecipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,7 @@
 		44A8C83D243B55B90000604B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44B94836243B5C1200770025 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		44B94838243B5D4600770025 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
-		44B9483A243B5DEF00770025 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		44B9483A243B5DEF00770025 /* RBRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBRecipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				44B94836243B5C1200770025 /* Ingredient.swift */,
-				44B9483A243B5DEF00770025 /* Recipe.swift */,
+				44B9483A243B5DEF00770025 /* RBRecipe.swift */,
 				44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */,
 				44B94838243B5D4600770025 /* Measurement.swift */,
 			);
@@ -251,7 +251,7 @@
 				44899E4F244097FB001C8192 /* JSONEncodingHelper.swift in Sources */,
 				44B94839243B5D4600770025 /* Measurement.swift in Sources */,
 				44899E49244097FB001C8192 /* OpenISO8601DateFormatter.swift in Sources */,
-				44B9483B243B5DEF00770025 /* Recipe.swift in Sources */,
+				44B9483B243B5DEF00770025 /* RBRecipe.swift in Sources */,
 				44899E4A244097FB001C8192 /* Recipe.swift in Sources */,
 				44899E46244097FB001C8192 /* RecipeAPI.swift in Sources */,
 				44A8C832243B55B30000604B /* SceneDelegate.swift in Sources */,

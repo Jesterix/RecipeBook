@@ -8,15 +8,15 @@
 
 import Foundation
 
-struct Recipe: Identifiable {
+struct RBRecipe: Identifiable {
     let id = UUID()
     var title: String
     var ingredients: [Ingredient] = []
     var text: String?
 
-    func demo() -> Recipe {
+    func demo() -> RBRecipe {
         let measurement = RBMeasurement(title: "spoon", weightInGramms: 15)
         let ingredient = Ingredient(title: "Water", quantity: 1.5, measurement: measurement)
-        return Recipe(title: title, ingredients: [ingredient], text: "Take this water and drink it!")
+        return RBRecipe(title: title, ingredients: [ingredient], text: "Take this water and drink it!")
     }
 }

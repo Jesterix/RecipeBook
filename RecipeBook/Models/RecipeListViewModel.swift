@@ -9,8 +9,8 @@
 import Foundation
 
 final class RecipeListViewModel: ObservableObject {
-    @Published private(set) var recipes: [Recipe] =
-        [Recipe.init(title: "Water").demo(),
-        Recipe.init(title: "Bread").demo(),
-        Recipe.init(title: "Soup").demo()]
+    @Published private(set) var recipes: [RBRecipe] =
+        [RBRecipe.init(title: "Water").demo(),
+        RBRecipe.init(title: "Bread").demo(),
+        RBRecipe.init(title: "Soup").demo()]
 }
