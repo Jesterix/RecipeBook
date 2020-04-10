@@ -11,6 +11,7 @@ import SwiftUI
 struct RecipeListView: View {
     @EnvironmentObject var recipeListViewModel: RecipeListViewModel
     @State var titleForRecipe: String = ""
+    @ObservedObject private var kGuard = KeyboardGuardian(textFieldCount: 1)
 
     var body: some View {
         VStack {
@@ -48,7 +49,11 @@ struct RecipeListView: View {
             }
             .padding()
             .textFieldStyle(RoundedBorderTextFieldStyle())
+            .background(GeometryGetter(rect: $kGuard.rects[0]))
         }
+        .offset(y: kGuard.slide).animation(.easeInOut(duration: 0.5))
+        .onAppear { self.kGuard.addObserver() }
+        .onDisappear { self.kGuard.removeObserver() }
     }
 }
 
