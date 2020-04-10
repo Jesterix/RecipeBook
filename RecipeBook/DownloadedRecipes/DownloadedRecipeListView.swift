@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DownloadedRecipeListView: View {
     @EnvironmentObject var viewModel: DownloadedRecipesViewModel
-    var ingredient: String
+    var ingredient: String = "tomato"
 
     var body: some View {
         NavigationView {
