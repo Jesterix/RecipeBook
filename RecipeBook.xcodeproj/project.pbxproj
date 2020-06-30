@@ -114,6 +114,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4457792524AB5FB700336588 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				44899E302440850B001C8192 /* RecipeListView.swift */,
+				4457792324AB5EE300336588 /* RecipeListRow.swift */,
+				4457792624AB5FC900336588 /* RecipeDetails */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		4457792624AB5FC900336588 /* RecipeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4457792124AB48AC00336588 /* RecipeView.swift */,
+			);
+			path = RecipeDetails;
+			sourceTree = "<group>";
+		};
 		44899E32244097FB001C8192 /* OpenAPIs */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,9 +203,7 @@
 				44A8C82F243B55B30000604B /* AppDelegate.swift */,
 				44A8C831243B55B30000604B /* SceneDelegate.swift */,
 				44A8C833243B55B30000604B /* ContentView.swift */,
-				44899E302440850B001C8192 /* RecipeListView.swift */,
-				4457792324AB5EE300336588 /* RecipeListRow.swift */,
-				4457792124AB48AC00336588 /* RecipeView.swift */,
+				4457792524AB5FB700336588 /* RecipeList */,
 				44899E5B24409D91001C8192 /* DownloadedRecipes */,
 				4457792024AB445200336588 /* Extensions */,
 				44B9483C243B5E6C00770025 /* Models */,
