@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Ingredient {
+struct Ingredient: Identifiable {
+    let id = UUID()
     var title: String
     var quantity: Double?
     var measurement: RBMeasurement?
