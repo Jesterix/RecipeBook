@@ -9,14 +9,16 @@
 import SwiftUI
 
 struct RecipeView: View {
-    var recipe: RBRecipe
+    @State var recipe: RBRecipe
+    @State var isEditing = false
 
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
                     Spacer()
-                    Text(recipe.title)
+                    TextField("Title", text: $recipe.title)
+                        .multilineTextAlignment(.center)
                     Spacer()
                 }
                 ForEach(recipe.ingredients) { ingredient in
@@ -35,3 +37,4 @@ struct RecipeView: View {
         .navigationBarTitle("", displayMode: .inline)
     }
 }
+//.border(Color.red, width: 1)
