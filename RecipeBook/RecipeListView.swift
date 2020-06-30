@@ -13,8 +13,8 @@ struct RecipeListView: View {
     @State var titleForRecipe: String = ""
 
     var body: some View {
-        VStack {
-            NavigationView {
+        NavigationView {
+            VStack {
                 List (recipeListViewModel.recipes) { recipe in
                     NavigationLink (destination: RecipeView(recipe: recipe)) {
                         HStack {
@@ -40,26 +40,25 @@ struct RecipeListView: View {
                         }
                     }
                 }
-                .navigationBarTitle("Recipe List")
-                .navigationBarHidden(true)
-            }
 
-            Spacer()
-            TextField("Enter title for recipe...", text: $titleForRecipe, onEditingChanged: { (changed) in
-                print("Title onEditingChanged - \(changed)")
-                if !changed && self.titleForRecipe != "" {
-                    self.recipeListViewModel.appendRecipe(
-                        with: self.titleForRecipe)
-                    self.titleForRecipe = ""
+                Spacer()
+                TextField("Enter title for recipe...", text: $titleForRecipe, onEditingChanged: { (changed) in
+                    print("Title onEditingChanged - \(changed)")
+                    if !changed && self.titleForRecipe != "" {
+                        self.recipeListViewModel.appendRecipe(
+                            with: self.titleForRecipe)
+                        self.titleForRecipe = ""
+                    }
+                }) {
+                    print("Title onCommit")
                 }
-            }) {
-                print("Title onCommit")
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             }
-            .padding()
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .keyboardAdaptive()
+            .navigationBarTitle("Recipe List")
+            .navigationBarHidden(true)
         }
-        .keyboardAdaptive()
-
     }
 }
 
