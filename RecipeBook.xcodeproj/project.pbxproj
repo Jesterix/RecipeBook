@@ -97,6 +97,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4457791F24AB443500336588 /* KeyboardAdaptive */ = {
+			isa = PBXGroup;
+			children = (
+				4457791B24AB440600336588 /* KeyboardAdaptive.swift */,
+				4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */,
+				4457791924AB440500336588 /* UIResponder+Current.swift */,
+			);
+			path = KeyboardAdaptive;
+			sourceTree = "<group>";
+		};
+		4457792024AB445200336588 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44899E5724409CA9001C8192 /* Exts.swift */,
+				4457791F24AB443500336588 /* KeyboardAdaptive */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		44899E32244097FB001C8192 /* OpenAPIs */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,10 +190,7 @@
 				44899E302440850B001C8192 /* RecipeListView.swift */,
 				44C1866624815CC70002E507 /* KeyboardResponder.swift */,
 				44899E5B24409D91001C8192 /* DownloadedRecipes */,
-				44899E5724409CA9001C8192 /* Exts.swift */,
-				4457791B24AB440600336588 /* KeyboardAdaptive.swift */,
-				4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */,
-				4457791924AB440500336588 /* UIResponder+Current.swift */,
+				4457792024AB445200336588 /* Extensions */,
 				44B9483C243B5E6C00770025 /* Models */,
 				44A8C835243B55B90000604B /* Assets.xcassets */,
 				44A8C83A243B55B90000604B /* LaunchScreen.storyboard */,
