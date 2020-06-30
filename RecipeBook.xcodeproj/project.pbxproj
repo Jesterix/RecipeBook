@@ -39,6 +39,7 @@
 		44B94837243B5C1200770025 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94836243B5C1200770025 /* Ingredient.swift */; };
 		44B94839243B5D4600770025 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94838243B5D4600770025 /* Measurement.swift */; };
 		44B9483B243B5DEF00770025 /* RBRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9483A243B5DEF00770025 /* RBRecipe.swift */; };
+		44C1866724815CC70002E507 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1866624815CC70002E507 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		44B94836243B5C1200770025 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		44B94838243B5D4600770025 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		44B9483A243B5DEF00770025 /* RBRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBRecipe.swift; sourceTree = "<group>"; };
+		44C1866624815CC70002E507 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				44A8C831243B55B30000604B /* SceneDelegate.swift */,
 				44A8C833243B55B30000604B /* ContentView.swift */,
 				44899E302440850B001C8192 /* RecipeListView.swift */,
+				44C1866624815CC70002E507 /* KeyboardResponder.swift */,
 				44899E5B24409D91001C8192 /* DownloadedRecipes */,
 				44899E5724409CA9001C8192 /* Exts.swift */,
 				44B9483C243B5E6C00770025 /* Models */,
@@ -287,6 +290,7 @@
 				44A8C832243B55B30000604B /* SceneDelegate.swift in Sources */,
 				44899E4C244097FB001C8192 /* RecipeList.swift in Sources */,
 				44899E5A24409CE3001C8192 /* DownloadedRecipeListView.swift in Sources */,
+				44C1866724815CC70002E507 /* KeyboardResponder.swift in Sources */,
 				44899E312440850B001C8192 /* RecipeListView.swift in Sources */,
 				44A8C834243B55B30000604B /* ContentView.swift in Sources */,
 				44899E52244097FB001C8192 /* Configuration.swift in Sources */,
