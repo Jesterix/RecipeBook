@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		443CE52E2440BDD5005A359F /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CE52D2440BDD5005A359F /* GeometryGetter.swift */; };
 		443CE5302440BE0D005A359F /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443CE52F2440BE0D005A359F /* KeyboardGuardian.swift */; };
+		4457791C24AB440600336588 /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791924AB440500336588 /* UIResponder+Current.swift */; };
+		4457791D24AB440600336588 /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */; };
+		4457791E24AB440600336588 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791B24AB440600336588 /* KeyboardAdaptive.swift */; };
 		44899E2F24407BF2001C8192 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */; };
 		44899E312440850B001C8192 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E302440850B001C8192 /* RecipeListView.swift */; };
 		44899E44244097FB001C8192 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E33244097FB001C8192 /* APIHelper.swift */; };
@@ -45,6 +48,9 @@
 /* Begin PBXFileReference section */
 		443CE52D2440BDD5005A359F /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeometryGetter.swift; path = RecipeBook/GeometryGetter.swift; sourceTree = SOURCE_ROOT; };
 		443CE52F2440BE0D005A359F /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyboardGuardian.swift; path = RecipeBook/KeyboardGuardian.swift; sourceTree = SOURCE_ROOT; };
+		4457791924AB440500336588 /* UIResponder+Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
+		4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
+		4457791B24AB440600336588 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		44899E302440850B001C8192 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		44899E33244097FB001C8192 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				44C1866624815CC70002E507 /* KeyboardResponder.swift */,
 				44899E5B24409D91001C8192 /* DownloadedRecipes */,
 				44899E5724409CA9001C8192 /* Exts.swift */,
+				4457791B24AB440600336588 /* KeyboardAdaptive.swift */,
+				4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */,
+				4457791924AB440500336588 /* UIResponder+Current.swift */,
 				44B9483C243B5E6C00770025 /* Models */,
 				44A8C835243B55B90000604B /* Assets.xcassets */,
 				44A8C83A243B55B90000604B /* LaunchScreen.storyboard */,
@@ -269,6 +278,7 @@
 			files = (
 				44899E44244097FB001C8192 /* APIHelper.swift in Sources */,
 				44899E51244097FB001C8192 /* SynchronizedDictionary.swift in Sources */,
+				4457791E24AB440600336588 /* KeyboardAdaptive.swift in Sources */,
 				44899E5624409C52001C8192 /* DownloadedRecipeRow.swift in Sources */,
 				44899E4D244097FB001C8192 /* Extensions.swift in Sources */,
 				44899E2F24407BF2001C8192 /* RecipeListViewModel.swift in Sources */,
@@ -283,6 +293,7 @@
 				44B94839243B5D4600770025 /* Measurement.swift in Sources */,
 				443CE5302440BE0D005A359F /* KeyboardGuardian.swift in Sources */,
 				443CE52E2440BDD5005A359F /* GeometryGetter.swift in Sources */,
+				4457791D24AB440600336588 /* KeyboardHeightPublisher.swift in Sources */,
 				44899E49244097FB001C8192 /* OpenISO8601DateFormatter.swift in Sources */,
 				44B9483B243B5DEF00770025 /* RBRecipe.swift in Sources */,
 				44899E4A244097FB001C8192 /* Recipe.swift in Sources */,
@@ -290,6 +301,7 @@
 				44A8C832243B55B30000604B /* SceneDelegate.swift in Sources */,
 				44899E4C244097FB001C8192 /* RecipeList.swift in Sources */,
 				44899E5A24409CE3001C8192 /* DownloadedRecipeListView.swift in Sources */,
+				4457791C24AB440600336588 /* UIResponder+Current.swift in Sources */,
 				44C1866724815CC70002E507 /* KeyboardResponder.swift in Sources */,
 				44899E312440850B001C8192 /* RecipeListView.swift in Sources */,
 				44A8C834243B55B30000604B /* ContentView.swift in Sources */,
