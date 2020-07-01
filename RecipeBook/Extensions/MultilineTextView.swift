@@ -13,7 +13,6 @@ fileprivate struct UITextViewWrapper: UIViewRepresentable {
     typealias UIViewType = UITextView
 
     @Binding var text: String
-    @Binding var calculatedHeight: CGFloat
     var onDone: (() -> Void)?
 
     func makeUIView(context: UIViewRepresentableContext<UITextViewWrapper>) -> UITextView {
@@ -41,7 +40,6 @@ fileprivate struct UITextViewWrapper: UIViewRepresentable {
         if uiView.window != nil, !uiView.isFirstResponder {
             uiView.becomeFirstResponder()
         }
-        UITextViewWrapper.recalculateHeight(view: uiView, result: $calculatedHeight)
     }
 
     fileprivate static func recalculateHeight(view: UIView, result: Binding<CGFloat>) {
@@ -54,23 +52,20 @@ fileprivate struct UITextViewWrapper: UIViewRepresentable {
     }
 
     func makeCoordinator() -> Coordinator {
-        return Coordinator(text: $text, height: $calculatedHeight, onDone: onDone)
+        return Coordinator(text: $text, onDone: onDone)
     }
 
     final class Coordinator: NSObject, UITextViewDelegate {
         var text: Binding<String>
-        var calculatedHeight: Binding<CGFloat>
         var onDone: (() -> Void)?
 
-        init(text: Binding<String>, height: Binding<CGFloat>, onDone: (() -> Void)? = nil) {
+        init(text: Binding<String>, onDone: (() -> Void)? = nil) {
             self.text = text
-            self.calculatedHeight = height
             self.onDone = onDone
         }
 
         func textViewDidChange(_ uiView: UITextView) {
             text.wrappedValue = uiView.text
-            UITextViewWrapper.recalculateHeight(view: uiView, result: calculatedHeight)
         }
 
         func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -98,7 +93,6 @@ struct MultilineTextField: View {
         }
     }
 
-    @State private var dynamicHeight: CGFloat = 100
     @State private var showingPlaceholder = false
 
     init (_ placeholder: String = "", text: Binding<String>, onCommit: (() -> Void)? = nil) {
@@ -109,8 +103,7 @@ struct MultilineTextField: View {
     }
 
     var body: some View {
-        UITextViewWrapper(text: self.internalText, calculatedHeight: $dynamicHeight, onDone: onCommit)
-            .frame(minHeight: dynamicHeight, maxHeight: dynamicHeight)
+        UITextViewWrapper(text: self.internalText, onDone: onCommit)
             .background(placeholderView, alignment: .topLeading)
     }
 
