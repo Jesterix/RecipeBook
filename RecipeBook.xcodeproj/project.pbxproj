@@ -13,6 +13,7 @@
 		4457791E24AB440600336588 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791B24AB440600336588 /* KeyboardAdaptive.swift */; };
 		4457792224AB48AC00336588 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457792124AB48AC00336588 /* RecipeView.swift */; };
 		4457792424AB5EE400336588 /* RecipeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457792324AB5EE300336588 /* RecipeListRow.swift */; };
+		447EB08324ACDEE8009299DC /* AnyGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */; };
 		44899E2F24407BF2001C8192 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */; };
 		44899E312440850B001C8192 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E302440850B001C8192 /* RecipeListView.swift */; };
 		44899E44244097FB001C8192 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E33244097FB001C8192 /* APIHelper.swift */; };
@@ -52,6 +53,7 @@
 		4457791B24AB440600336588 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		4457792124AB48AC00336588 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		4457792324AB5EE300336588 /* RecipeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRow.swift; sourceTree = "<group>"; };
+		447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGestureRecognizer.swift; sourceTree = "<group>"; };
 		44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		44899E302440850B001C8192 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		44899E33244097FB001C8192 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				44899E5724409CA9001C8192 /* Exts.swift */,
 				4428E51824AC9FE3007F4D3A /* MultilineTextView.swift */,
+				447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */,
 				4457791F24AB443500336588 /* KeyboardAdaptive */,
 			);
 			path = Extensions;
@@ -326,6 +329,7 @@
 				4457791D24AB440600336588 /* KeyboardHeightPublisher.swift in Sources */,
 				44899E49244097FB001C8192 /* OpenISO8601DateFormatter.swift in Sources */,
 				44B9483B243B5DEF00770025 /* RBRecipe.swift in Sources */,
+				447EB08324ACDEE8009299DC /* AnyGestureRecognizer.swift in Sources */,
 				44899E4A244097FB001C8192 /* Recipe.swift in Sources */,
 				44899E46244097FB001C8192 /* RecipeAPI.swift in Sources */,
 				44A8C832243B55B30000604B /* SceneDelegate.swift in Sources */,
