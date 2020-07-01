@@ -17,4 +17,8 @@ final class RecipeListViewModel: ObservableObject {
     func appendRecipe(with title: String) {
         recipes.append(RBRecipe(title: title).demo())
     }
+
+    func changeRecipe(at index: Int, with recipe: RBRecipe) {
+        recipes[index] = recipe
+    }
 }
