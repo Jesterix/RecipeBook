@@ -29,7 +29,7 @@ struct RecipeListRow: View {
                 }
                 HStack {
                     Spacer()
-                    Text (recipe.text ?? "no text")
+                    Text (recipe.text)
                 }
             }
         }

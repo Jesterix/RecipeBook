@@ -12,7 +12,7 @@ struct RBRecipe: Identifiable {
     let id = UUID()
     var title: String
     var ingredients: [Ingredient] = []
-    var text: String?
+    var text: String = ""
 
     func demo() -> RBRecipe {
         let measurement = RBMeasurement(title: "spoon", weightInGramms: 15)

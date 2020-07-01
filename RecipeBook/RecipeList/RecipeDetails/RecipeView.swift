@@ -10,7 +10,6 @@ import SwiftUI
 
 struct RecipeView: View {
     @State var recipe: RBRecipe
-    @State var isEditing = false
 
     var body: some View {
         VStack {
@@ -29,7 +28,7 @@ struct RecipeView: View {
                         Text("\(ingredient.measurement?.title ?? "")")
                     }
                 }
-                Text(recipe.text ?? "")
+                TextField("Recipe", text: $recipe.text)
             }
             .padding()
             Spacer()
