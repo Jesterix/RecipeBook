@@ -30,6 +30,7 @@ struct RecipeListRow: View {
                 HStack {
                     Spacer()
                     Text (recipe.text)
+                        .lineLimit(1)
                 }
             }
         }
