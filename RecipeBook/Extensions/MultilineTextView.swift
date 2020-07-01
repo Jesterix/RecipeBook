@@ -25,6 +25,7 @@ fileprivate struct UITextViewWrapper: UIViewRepresentable {
         textField.isUserInteractionEnabled = true
         textField.isScrollEnabled = false
         textField.backgroundColor = UIColor.clear
+        textField.autocorrectionType = .no
         if nil != onDone {
             textField.returnKeyType = .done
         }
