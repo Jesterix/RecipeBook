@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4428E51924AC9FE3007F4D3A /* MultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428E51824AC9FE3007F4D3A /* MultilineTextView.swift */; };
 		4457791C24AB440600336588 /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791924AB440500336588 /* UIResponder+Current.swift */; };
 		4457791D24AB440600336588 /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */; };
 		4457791E24AB440600336588 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457791B24AB440600336588 /* KeyboardAdaptive.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4428E51824AC9FE3007F4D3A /* MultilineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextView.swift; sourceTree = "<group>"; };
 		4457791924AB440500336588 /* UIResponder+Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
 		4457791A24AB440600336588 /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
 		4457791B24AB440600336588 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				44899E5724409CA9001C8192 /* Exts.swift */,
+				4428E51824AC9FE3007F4D3A /* MultilineTextView.swift */,
 				4457791F24AB443500336588 /* KeyboardAdaptive */,
 			);
 			path = Extensions;
@@ -330,6 +333,7 @@
 				44899E5A24409CE3001C8192 /* DownloadedRecipeListView.swift in Sources */,
 				4457791C24AB440600336588 /* UIResponder+Current.swift in Sources */,
 				44899E312440850B001C8192 /* RecipeListView.swift in Sources */,
+				4428E51924AC9FE3007F4D3A /* MultilineTextView.swift in Sources */,
 				44A8C834243B55B30000604B /* ContentView.swift in Sources */,
 				4457792424AB5EE400336588 /* RecipeListRow.swift in Sources */,
 				44899E52244097FB001C8192 /* Configuration.swift in Sources */,

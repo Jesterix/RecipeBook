@@ -29,7 +29,8 @@ struct RecipeView: View {
                         Text("\(ingredient.measurement?.title ?? "")")
                     }
                 }
-                TextField("Recipe", text: $recipe.text)
+//                TextField("Recipe", text: $recipe.text)
+                MultilineTextField("Recipe", text: $recipe.text)
             }
             .padding()
             Spacer()
