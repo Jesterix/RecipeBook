@@ -21,14 +21,7 @@ struct RecipeView: View {
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
-                ForEach(recipe.ingredients) { ingredient in
-                    HStack {
-                        Text(ingredient.title)
-                        Spacer()
-                        Text("\(ingredient.quantity?.description ?? "")")
-                        Text("\(ingredient.measurement?.title ?? "")")
-                    }
-                }
+                IngredientList(ingredients: $recipe.ingredients)
                 MultilineTextField("Recipe", text: $recipe.text)
             }
             .padding()
