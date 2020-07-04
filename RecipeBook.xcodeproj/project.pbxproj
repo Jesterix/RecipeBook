@@ -14,6 +14,8 @@
 		4457792224AB48AC00336588 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457792124AB48AC00336588 /* RecipeView.swift */; };
 		4457792424AB5EE400336588 /* RecipeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457792324AB5EE300336588 /* RecipeListRow.swift */; };
 		447EB08324ACDEE8009299DC /* AnyGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */; };
+		447EB08524ACE3F4009299DC /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EB08424ACE3F4009299DC /* IngredientList.swift */; };
+		447EB08724B0C46D009299DC /* DoubleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EB08624B0C46D009299DC /* DoubleFormatter.swift */; };
 		44899E2F24407BF2001C8192 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */; };
 		44899E312440850B001C8192 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E302440850B001C8192 /* RecipeListView.swift */; };
 		44899E44244097FB001C8192 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44899E33244097FB001C8192 /* APIHelper.swift */; };
@@ -54,6 +56,8 @@
 		4457792124AB48AC00336588 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		4457792324AB5EE300336588 /* RecipeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRow.swift; sourceTree = "<group>"; };
 		447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGestureRecognizer.swift; sourceTree = "<group>"; };
+		447EB08424ACE3F4009299DC /* IngredientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
+		447EB08624B0C46D009299DC /* DoubleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleFormatter.swift; sourceTree = "<group>"; };
 		44899E2E24407BF2001C8192 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		44899E302440850B001C8192 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		44899E33244097FB001C8192 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				44899E5724409CA9001C8192 /* Exts.swift */,
 				4428E51824AC9FE3007F4D3A /* MultilineTextView.swift */,
 				447EB08224ACDEE8009299DC /* AnyGestureRecognizer.swift */,
+				447EB08624B0C46D009299DC /* DoubleFormatter.swift */,
 				4457791F24AB443500336588 /* KeyboardAdaptive */,
 			);
 			path = Extensions;
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				4457792124AB48AC00336588 /* RecipeView.swift */,
+				447EB08424ACE3F4009299DC /* IngredientList.swift */,
 			);
 			path = RecipeDetails;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44899E44244097FB001C8192 /* APIHelper.swift in Sources */,
+				447EB08524ACE3F4009299DC /* IngredientList.swift in Sources */,
 				44899E51244097FB001C8192 /* SynchronizedDictionary.swift in Sources */,
 				4457791E24AB440600336588 /* KeyboardAdaptive.swift in Sources */,
 				44899E5624409C52001C8192 /* DownloadedRecipeRow.swift in Sources */,
@@ -321,6 +328,7 @@
 				44B94837243B5C1200770025 /* Ingredient.swift in Sources */,
 				44A8C830243B55B30000604B /* AppDelegate.swift in Sources */,
 				44899E47244097FB001C8192 /* CodableHelper.swift in Sources */,
+				447EB08724B0C46D009299DC /* DoubleFormatter.swift in Sources */,
 				44899E50244097FB001C8192 /* Models.swift in Sources */,
 				44899E45244097FB001C8192 /* URLSessionImplementations.swift in Sources */,
 				44899E4B244097FB001C8192 /* ErrorModel.swift in Sources */,
