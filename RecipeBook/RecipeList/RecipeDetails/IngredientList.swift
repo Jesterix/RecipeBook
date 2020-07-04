@@ -1,11 +1,3 @@
-//
-//  IngredientList.swift
-//  RecipeBook
-//
-//  Created by Георгий Хайденко on 01.07.2020.
-//  Copyright © 2020 George Khaydenko. All rights reserved.
-//
-
 import SwiftUI
 
 struct IngredientList: View {

@@ -1,11 +1,3 @@
-//
-//  KeyboardHeightPublisher.swift
-//  KeyboardAvoidanceSwiftUI
-//
-//  Created by Vadim Bulavin on 3/27/20.
-//  Copyright © 2020 Vadim Bulavin. All rights reserved.
-//
-
 import Combine
 import UIKit
 

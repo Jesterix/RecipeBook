@@ -1,11 +1,3 @@
-//
-//  DownloadedRecipeListView.swift
-//  RecipeBook
-//
-//  Created by Георгий Хайденко on 10.04.2020.
-//  Copyright © 2020 George Khaydenko. All rights reserved.
-//
-
 import SwiftUI
 
 struct DownloadedRecipeListView: View {

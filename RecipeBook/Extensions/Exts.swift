@@ -1,11 +1,3 @@
-//
-//  Exts.swift
-//  OtusDZ2
-//
-//  Created by Георгий Хайденко on 16.03.2020.
-//  Copyright © 2020 George Khaydenko. All rights reserved.
-//
-
 import Foundation
 
 extension String: Identifiable {

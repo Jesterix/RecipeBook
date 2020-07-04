@@ -1,11 +1,3 @@
-//
-//  DoubleFormatter.swift
-//  RecipeBook
-//
-//  Created by Георгий Хайденко on 04.07.2020.
-//  Copyright © 2020 George Khaydenko. All rights reserved.
-//
-
 import Foundation
 
 public class DoubleFormatter: Formatter {
