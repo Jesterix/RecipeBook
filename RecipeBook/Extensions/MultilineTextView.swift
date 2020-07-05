@@ -30,9 +30,6 @@ fileprivate struct UITextViewWrapper: UIViewRepresentable {
         if uiView.text != self.text {
             uiView.text = self.text
         }
-        if uiView.window != nil, !uiView.isFirstResponder {
-            uiView.becomeFirstResponder()
-        }
     }
 
     fileprivate static func recalculateHeight(view: UIView, result: Binding<CGFloat>) {
