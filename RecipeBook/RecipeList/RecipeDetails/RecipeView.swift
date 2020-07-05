@@ -15,6 +15,7 @@ struct RecipeView: View {
                 }
                 IngredientList(ingredients: $recipe.ingredients)
                 MultilineTextField("Recipe", text: $recipe.text)
+                    .border(Color.red, width: 1)
             }
             .padding()
             Spacer()

@@ -12,12 +12,14 @@ struct IngredientList: View {
                             TextField(
                                 "",
                                 text: self.$ingredients[index].title)
-                            Spacer()
+                            Divider()
                             TextField(
                                 "",
                                 value: self.$ingredients[index].quantity,
                                 formatter: DoubleFormatter())
                                 .keyboardType(.decimalPad)
+                                .multilineTextAlignment(.trailing)
+                            Divider()
                             TextField(
                                 "",
                                 text: self.$ingredients[index].measureTitle)
@@ -25,12 +27,17 @@ struct IngredientList: View {
                     }
                 }
             }
+            .fixedSize(horizontal: false, vertical: true)
+            .border(Color.red, width: 1)
+
             HStack {
                 Button("Add ingredient") {
                     //add to model
+                    self.ingredients.append(Ingredient(title: "Flour", quantity: 3, measurement: nil))
                 }
                 Spacer()
             }
+            .border(Color.red, width: 1)
         }
     }
 }
