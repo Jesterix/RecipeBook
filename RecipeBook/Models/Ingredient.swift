@@ -14,7 +14,18 @@ struct Ingredient: Identifiable {
             measurement?.title = newValue
         }
     }
-}
 
+    var quantityString: String {
+        get {
+            guard let value = quantity else { return "0" }
+            return value.string
+        }
+        set {
+            if let value = NumberFormatter().number(from: newValue) {
+                self.quantity = value.doubleValue
+            }
+        }
+    }
+}
 
 

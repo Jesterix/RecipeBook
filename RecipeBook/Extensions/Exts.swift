@@ -17,3 +17,7 @@ extension RandomAccessCollection where Self.Element: Identifiable {
         return distance(from: itemIndex, to: endIndex) == 1
     }
 }
+
+extension LosslessStringConvertible {
+    var string: String { .init(self) }
+}

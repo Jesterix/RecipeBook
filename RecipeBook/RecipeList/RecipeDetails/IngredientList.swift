@@ -35,12 +35,11 @@ struct IngredientListRows: View {
                         "",
                         text: self.$ingredients[index].title)
                     Divider()
+
                     TextField(
                         "",
-                        value: self.$ingredients[index].quantity,
-                        formatter: DoubleFormatter())
-                        .keyboardType(.decimalPad)
-                        .multilineTextAlignment(.trailing)
+                        text: self.$ingredients[index].quantityString)
+
                     Divider()
                     TextField(
                         "",
